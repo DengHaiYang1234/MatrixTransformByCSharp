@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixTransform", "MatrixTransform\MatrixTransform.csproj", "{E79B194C-2460-49B4-A70C-D6F5BCE9D6FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DTransform", "3DTransform\3DTransform.csproj", "{5247DEEA-7F9D-4F63-84B7-54AD0CFCF8AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E79B194C-2460-49B4-A70C-D6F5BCE9D6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E79B194C-2460-49B4-A70C-D6F5BCE9D6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E79B194C-2460-49B4-A70C-D6F5BCE9D6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5247DEEA-7F9D-4F63-84B7-54AD0CFCF8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5247DEEA-7F9D-4F63-84B7-54AD0CFCF8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5247DEEA-7F9D-4F63-84B7-54AD0CFCF8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5247DEEA-7F9D-4F63-84B7-54AD0CFCF8AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
