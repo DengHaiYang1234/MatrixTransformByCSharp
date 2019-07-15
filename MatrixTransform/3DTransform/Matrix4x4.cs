@@ -30,7 +30,7 @@ namespace _3DTransform
                 {
                     for (int n = 1; n <= 4; n++)
                     {
-                        newM[w, h] = this[w, n]*m[n, h];
+                        newM[w, h] += this[w, n]*m[n, h];
                     }
                 }
             }
@@ -44,17 +44,14 @@ namespace _3DTransform
         {
             double[] newArr = new double[4];
             double[] vArr = v.ToArr();
-            for (int c = 1; c <= 4; c++)
+            for (int c = 1; c <= 4; c++)//列
             {
-                for (int h = 1; h <= 4; h++)
+                for (int h = 1; h <= 4; h++)//行
                 {
-                    newArr[c] += vArr[h]*this[c, h];
+                    newArr[c - 1] += vArr[h - 1]*this[h, c];
                 }
             }
-
-            Vector4 newV = new Vector4(newArr);
-
-            return newV;
+            return new Vector4(newArr); ;
         }
     }
 }
