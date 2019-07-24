@@ -52,7 +52,7 @@ namespace _3DTransform
         {
             PointF p = new PointF();
             p.X = (float)(v.x / v.w);
-            p.Y = (float)(v.y / v.w);
+            p.Y = -(float)(v.y / v.w);
             return p;
         }
     }

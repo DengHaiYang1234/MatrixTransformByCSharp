@@ -39,7 +39,7 @@ namespace _3DTransform
         }
 
 
-        //需要修改  应该是矩阵*向量
+        
         public Vector4 Mul(Vector4 v)
         {
             double[] newArr = new double[4];
@@ -52,6 +52,20 @@ namespace _3DTransform
                 }
             }
             return new Vector4(newArr); ;
+        }
+
+        public Matrix4x4 Transpose()
+        {
+            Matrix4x4 t = new Matrix4x4();
+            for (int i = 1; i <= 4; i++)
+            {
+                for (int j = 1; j <= 4; j++)
+                {
+                    t[i, j] = this[j, i];
+                }
+            }
+
+            return t;
         }
     }
 }
